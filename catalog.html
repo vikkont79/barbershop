@@ -3,13 +3,14 @@
  <head>
    <meta charset="utf-8">
    <title>Каталог</title>
+   <link rel="stylesheet" href="styles/styles.css">
  </head>
 
  <body>
    <header class="main-header">
      <nav class="navigation">
        <a class="navigation-logo" href="index.html">
-         <img class="page-header-logo" alt="Логотип барбершоп «Бородинский»" src="">
+         <img class="page-header-logo" src="img/logo-short-dark.svg" alt="Логотип барбершоп «Бородинский»"  width="140" height="18">
        </a>
        <ul class="navigation-list">
          <li class="navigation-item">
@@ -145,25 +146,27 @@
          </fieldset>         
          <button class="button" type="submit">Показать</button>
        </form>
-       <form class="sorting-type">
-         <label class="visually-hidden" for="sorting">Сортировка</label>
-         <select class="select-control" id="sorting" name="sorting">
-           <option value="popular">Сначала популярное</option>
-           <option value="cheap">Сначала дешёвое</option>
-           <option value="expensive">Сначала дорогое</option>
-         </select>
-         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-       </form>
-       <a href="#" class="button button-light">
-         <span class="visually-hidden">Показать список</span>
-       </a>
-       <a class="button" href="#">
-         <span class="visually-hidden">Показать карточки</span>
-       </a>
+       <div class="sorting-container">
+         <form class="sorting-type">
+           <label class="visually-hidden" for="sorting">Сортировка</label>
+           <select class="select-control" id="sorting" name="sorting">
+             <option value="popular">Сначала популярное</option>
+             <option value="cheap">Сначала дешёвое</option>
+             <option value="expensive">Сначала дорогое</option>
+           </select>
+           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+         </form>
+         <a href="#" class="button button-light">
+           <span class="visually-hidden">Показать список</span>
+         </a>
+         <a class="button" href="#">
+           <span class="visually-hidden">Показать карточки</span>
+         </a>
+       </div>
        <ul class="product-list">
          <li class="product-card">
            <a class="product-card-link" href="product.html">
-             <img class="product-card-image" src="" alt="">
+             <img class="product-card-image" src="img/catalog/1.jpg" alt="" width="220" height="168">
              <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
            </a>
            <b class="product-card-price">744 ₽</b>
@@ -171,7 +174,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-             <img class="product-card-image" src="" alt="">
+             <img class="product-card-image" src="img/catalog/2.jpg" alt="" width="220" height="168"">
              <h3 class="product-card-title">Syoss шампунь Men Power &amp; Strength</h3>
            </a>
            <b class="product-card-price">160 ₽</b>
@@ -179,7 +182,7 @@
          </li>
          <li class="product-card">
            <a class="product-card-link" href="#">
-             <img class="product-card-image" src="" alt="">
+             <img class="product-card-image" src="img/catalog/3.jpg" alt="" width="220" height="168">
              <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
            </a>
            <b class="product-card-price">94 ₽</b>
@@ -187,7 +190,7 @@
          </li>
          <li class="product-card">
            <a class="product-card-link" href="#">
-             img class="product-card-image" src="" alt="">
+             <img class="product-card-image" src="img/catalog/4.jpg" alt="" width="220" height="168">
              <h3 class="product-card-title">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</h3>
            </a>
            <b class="product-card-price">173 ₽</b>
@@ -195,7 +198,7 @@
          </li>
          <li class="product-card">
            <a class="product-card-link" href="#">
-             <img class="product-card-image" src="" alt="">
+             <img class="product-card-image" src="img/catalog/5.jpg" alt="" width="220" height="168">
              <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
            </a>
            <b class="product-card-price">441 ₽</b>
@@ -203,7 +206,7 @@
          </li>
          <li class="product-card">
            <a class="product-card-link" href="#">
-             <img class="product-card-image" src="" alt="">
+             <img class="product-card-image" src="img/catalog/6.jpg" alt="" width="220" height="168">
              <h3 class="product-card-title">American Crew шампунь Anti-Dandruff</h3>
            </a>
            <b class="product-card-price">904 ₽</b>
@@ -244,7 +247,7 @@
     <footer class="main-footer">
      <section class="footer-contacts">
        <h2 class="visually-hidden">Контакты</h2>
-       <img class="footer-contacts-logo" src="img/logo-short-light.svg" alt="Логотип Барбершоп «Бородинский»">
+       <img class="footer-contacts-logo" src="img/logo-short-light.svg" alt="Логотип Барбершоп «Бородинский»" width="183" height="21">
        <address class="contacts-address">
          <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
          <a class="footer-contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
